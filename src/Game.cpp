@@ -1,10 +1,5 @@
 //GameBase.cpp
-
-#include "SDL2/SDL.h"
-#include "SDL2/SDL_image.h"
-#include <iostream>
 #include "Game.h"
-using namespace std;
 
 Game* Game::instance = NULL;
 

@@ -1,10 +1,4 @@
-#include <iostream>
-#include <queue>
-#include <vector>
-#include <functional>
-#include "Message.h"
 #include "MessageBus.h"
-using namespace std;
 
 //Constructor
 	MessageBus::MessageBus(){};

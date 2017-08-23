@@ -1,7 +1,4 @@
-//message.cpp
-#include <iostream>
 #include "Message.h"
-using namespace std;
 
 //Constructor
 	Message::Message(const string Event){
