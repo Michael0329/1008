@@ -14,5 +14,9 @@ add_executable(1008
     src/main.cpp
     src/Game.h
     src/Game.cpp
+    messagebus/Message.h
+    messagebus/Message.cpp
+    messagebus/MessageBus.h
+    messagebus/MessageBus.cpp
     )
 target_link_libraries(1008 SDL2 SDL2_image SDL2_mixer SDL2_ttf)

@@ -1,5 +1,6 @@
 //message.cpp
 #include <iostream>
+#include "Message.h"
 using namespace std;
 
 //Constructor
@@ -8,11 +9,11 @@ using namespace std;
 		messageEvent = Event;
 		}
 
-//Destructor
-	Message::~Message();
+//Destructors
+	Message::~Message(){}
 
 //Gets
 	string Message::GetEvent () {
 
 		return messageEvent;
-	}
+	};

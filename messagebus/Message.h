@@ -1,4 +1,6 @@
-#include <iostream>
+#ifndef MESSAGE_H_
+#define MESSAGE_H_
+	#include <iostream>
 using namespace std;
 
 class Message {
@@ -12,4 +14,6 @@ public:
 private:
 
 	string messageEvent;
-}
+};
+
+#endif
