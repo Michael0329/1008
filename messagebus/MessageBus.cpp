@@ -7,12 +7,12 @@
 	MessageBus::~MessageBus(){};
 
 //Add Receiver to the List (FIFO)
-	void MessageBus::AddReceiver (function<void (Message)> messageReceiver){
+	void MessageBus::addReceiver (function<void (Message)> messageReceiver){
 		receivers.push_back (messageReceiver);
 	}
 
 //Send Message to Message List
-	void MessageBus::SendMessage (Message message){
+	void MessageBus::sendMessage (Message message){
 		messages.push (message);
 	}
 

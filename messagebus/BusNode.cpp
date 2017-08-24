@@ -1,23 +1,28 @@
 #include "BusNode.h"
 
 //Constructor
-	BusNode::BusNode(MessageBus *messageBus);
+	BusNode::BusNode(MessageBus *messageBus){
+		this -> messageBus = messageBus;
+		this -> messageBus -> addReceiver(this->getNotifyFunc());
+	};
 
 //Destructor
-	BusNode::~BusNode();
+	BusNode::~BusNode(){};
 	
-	virtual void BusNode::update ();
-
-protected:
-
-	MessageBus *messageBus;
+	void BusNode::update (){};
 
 //Get's object OnNotify
-	function <void (Message)> BusNode::getNotifyFunc();
+	function <void (Message)> BusNode::getNotifyFunc(){
+		auto messageListener = [=] (Message message) -> void {
+			this -> onNotify(message);
+		};
+		return messageListener;
+	};
 
 //Send message
-	void BusNode::sendMessage (Message message);
+	void BusNode::sendMessage (Message message){
+		messageBus -> sendMessage(message);
+	};
 
 //Action to do when notified
-	virtual void BusNode::onNotify (Message message);
-};
+	void BusNode::onNotify (Message message){};

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <functional>
 #include "Message.h"
+#include "MessageBus.h"
 using namespace std;
 
 class BusNode

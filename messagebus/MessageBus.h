@@ -10,8 +10,8 @@ class MessageBus
 public:
 	MessageBus();
 	~MessageBus();
-	void AddReceiver (function<void (Message)> messageReceiver);
-	void SendMessage (Message message);
+	void addReceiver (function<void (Message)> messageReceiver);
+	void sendMessage (Message message);
 	void Notify();
 
 private:
