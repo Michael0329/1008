@@ -12,7 +12,7 @@ public:
 
 //Constructor
 
-	Game (string Title, int Width, int Height);
+	Game ();
 
 //Destructor
 	~Game ();
@@ -23,6 +23,8 @@ public:
 //Get Renderer
 	SDL_Renderer* GetRenderer ();
 
+//Start SDL Modules
+	void inicializeSDLModules ();
 //State
 //	State& GetState ();
 
