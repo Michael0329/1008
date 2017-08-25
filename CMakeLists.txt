@@ -16,6 +16,8 @@ add_executable(1008
     src/Game.cpp
     src/GraphicManager.h
     src/GraphicManager.cpp
+    src/GameObject.h
+    src/GameObject.cpp
     messagebus/Message.h
     messagebus/Message.cpp
     messagebus/MessageBus.h

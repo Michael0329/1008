@@ -3,6 +3,7 @@
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"
 #include <iostream>
+#include "GameObject.h"
 using namespace std;
 
 class Game{
@@ -20,7 +21,7 @@ public:
 	void Run ();
 
 //Get Renderer
-	SDL_Renderer* GetRenderer ();
+	SDL_Renderer* getRenderer ();
 
 //Start SDL Modules
 	void initializeSDLModules ();
@@ -28,7 +29,7 @@ public:
 //	State& GetState ();
 
 //Get Instance
-	static Game* GetInstance ();
+	static Game* getInstance ();
 
 private:
 

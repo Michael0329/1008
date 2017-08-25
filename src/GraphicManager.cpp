@@ -15,4 +15,10 @@ GraphicManager* GraphicManager::instance = NULL;
 
   };
 
+//Destructor
   GraphicManager::~GraphicManager(){};
+
+//Run (Update)
+  void GraphicManager::Run(){
+
+  }
