@@ -5,8 +5,7 @@
 #include <iostream>
 using namespace std;
 
-class Game
-{
+class Game{
 
 public:
 
@@ -24,7 +23,7 @@ public:
 	SDL_Renderer* GetRenderer ();
 
 //Start SDL Modules
-	void inicializeSDLModules ();
+	void initializeSDLModules ();
 //State
 //	State& GetState ();
 

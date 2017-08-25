@@ -6,7 +6,6 @@ using namespace std;
 
 int main (int argc, char* args[]){
 		Game teste;
-		string loko;
-		cin >> loko;
+		SDL_Delay (5000);
 
 }

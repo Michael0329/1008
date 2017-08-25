@@ -13,11 +13,11 @@ Game* Game::instance = NULL;
 		}
 
 		instance = this;
-		inicializeSDLModules();
+		initializeSDLModules();
 
 	}
 
-	void Game::inicializeSDLModules () {
+	void Game::initializeSDLModules () {
 		//SDL Modules
 		if (SDL_Init(SDL_INIT_VIDEO || SDL_INIT_AUDIO || SDL_INIT_TIMER) < 0)    {
 			cerr << "Module initialization error: " << SDL_GetError () << endl;
