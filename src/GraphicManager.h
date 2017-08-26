@@ -14,11 +14,21 @@ public:
   ~GraphicManager();
 
 //Run
-  void Run(SDL_Surface *sprite, SDL_Surface* tela);
+  void Run ();
+
+//Apply images on the Screen
+ void Drawer (SDL_Surface *sprite);
+
+//CreatesWindow
+  void CreateWindow();
 
 private:
 
-  static GraphicManager* instance;
+  static GraphicManager *instance;
+
+  SDL_Window *gameWindow = NULL;
+
+  SDL_Renderer* renderer = NULL;
 
 
 };

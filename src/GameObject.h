@@ -11,7 +11,10 @@ public:
 //Sets
   void setXY (int x, int y);
 
+  void setSprite (SDL_Surface *sprite);
+
 private:
 
   int x, y;
+  SDL_Surface *sprite;
 };

@@ -4,6 +4,7 @@
 #include "SDL2/SDL_image.h"
 #include <iostream>
 #include "GameObject.h"
+#include "GraphicManager.h"
 using namespace std;
 
 class Game{
@@ -34,10 +35,6 @@ public:
 private:
 
 	static Game* instance;
-
-	SDL_Window* gameWindow = NULL;
-
-	SDL_Renderer* renderer = NULL;
 
 //	State* state = NULL;
 

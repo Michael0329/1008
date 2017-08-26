@@ -15,6 +15,10 @@ Game* Game::instance = NULL;
 		instance = this;
 		initializeSDLModules();
 		GameObject c1 (0, 0, IMG_Load ("assets/01.png"));
+		GraphicManager G1;
+		G1.CreateWindow();
+	//	G1.Drawer (c1->sprite);
+		G1.Run();
 
 	}
 
@@ -26,15 +30,6 @@ Game* Game::instance = NULL;
 
 		//IMG Modules
 		IMG_Init (IMG_INIT_PNG);
-
-		//Creates Window and Renderer
-		gameWindow =  SDL_CreateWindow ("1008", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 480, 270, SDL_WINDOW_SHOWN);
-		if (gameWindow == NULL){
-			cout << "Window initialization error: " << SDL_GetError () << endl;
-		}
-		else {
-			renderer = SDL_CreateRenderer (gameWindow, -1, SDL_RENDERER_ACCELERATED);
-		}
 
 	}
 
