@@ -19,6 +19,7 @@ GraphicManager* GraphicManager::instance = NULL;
   GraphicManager::~GraphicManager(){};
 
 //Run (Update)
-  void GraphicManager::Run(){
+  void GraphicManager::Run(SDL_Surface *sprite, SDL_Surface* tela){
+    //SDL_BlitSurface (SDL_Surface &sprite, NULL, SDL_Surface* tela, NULL);
 
   }

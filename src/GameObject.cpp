@@ -2,8 +2,9 @@
 #include "GameObject.h"
 
 //Constructor
-  GameObject::GameObject (int x, int y){
+  GameObject::GameObject (int x, int y, SDL_Surface *sprite){
     setXY(x, y);
+    cout << x << endl << y << endl;
   };
 
 //Sets

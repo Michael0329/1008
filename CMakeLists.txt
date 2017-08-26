@@ -18,6 +18,8 @@ add_executable(1008
     src/GraphicManager.cpp
     src/GameObject.h
     src/GameObject.cpp
+    src/Sprite.h
+    src/Sprite.cpp
     messagebus/Message.h
     messagebus/Message.cpp
     messagebus/MessageBus.h

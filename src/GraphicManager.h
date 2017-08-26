@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "SDL2/SDL_image.h"
 using namespace std;
 
 class GraphicManager {
@@ -13,7 +14,7 @@ public:
   ~GraphicManager();
 
 //Run
-  void Run ();
+  void Run(SDL_Surface *sprite, SDL_Surface* tela);
 
 private:
 

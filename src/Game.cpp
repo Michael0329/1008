@@ -14,6 +14,7 @@ Game* Game::instance = NULL;
 
 		instance = this;
 		initializeSDLModules();
+		GameObject c1 (0, 0, IMG_Load ("assets/01.png"));
 
 	}
 
