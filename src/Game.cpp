@@ -17,7 +17,7 @@ Game* Game::instance = NULL;
 		GameObject c1 (0, 0, IMG_Load ("assets/01.png"));
 		GraphicManager G1;
 		G1.CreateWindow();
-	//	G1.Drawer (c1->sprite);
+	  G1.Drawer (c1.sprite);
 		G1.Run();
 
 	}

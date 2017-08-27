@@ -2,9 +2,9 @@
 #include "GameObject.h"
 
 //Constructor
-  GameObject::GameObject (int x, int y, SDL_Surface *sprite){
+  GameObject::GameObject (int x, int y, SDL_Surface *Sprite){
     setXY(x, y);
-    //setSprite(*sprite);
+    setSprite (*Sprite);
   };
 
 //Sets
@@ -13,8 +13,8 @@ void GameObject::setXY (int x, int y){
   this->y = y;
 }
 
-void GameObject::setSprite (SDL_Surface *Sprite){
-  this->sprite = Sprite;
+void GameObject::setSprite (SDL_Surface &Sprite){
+  this->sprite = &Sprite;
   if (sprite != NULL) {
     cout << "Loaded sprite";
   };
