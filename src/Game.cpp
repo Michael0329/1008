@@ -14,11 +14,6 @@ Game* Game::instance = NULL;
 
 		instance = this;
 		initializeSDLModules();
-		GameObject c1 (0, 0, IMG_Load ("assets/01.png"));
-		GraphicManager G1;
-		G1.CreateWindow();
-	  G1.Drawer (c1.sprite);
-		G1.Run();
 
 	}
 
@@ -34,4 +29,30 @@ Game* Game::instance = NULL;
 	}
 
 	Game::~Game() {};
-//
+
+//Update
+	void Game::Update (){
+
+//Test stuff
+		GameObject c1 (500, 60, IMG_Load ("assets/01.png"));
+		GraphicManager G1;
+		G1.CreateWindow();
+
+//Main game loop
+		while (!quit) {
+
+					CurrentTime = SDL_GetTicks ();
+					if (CurrentTime > LastTime + (1000/fps)){
+							LastTime = CurrentTime;
+							cout << CurrentTime << endl;
+							G1.Drawer (c1.sprite);
+							G1.Run();
+							};
+//Quit check
+			while (SDL_PollEvent (&e) != 0){
+						if (e.type == SDL_QUIT){
+							quit = true; };
+			};
+	};
+
+};

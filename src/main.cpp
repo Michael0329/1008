@@ -6,7 +6,6 @@ using namespace std;
 
 int main (int argc, char* args[]){
 		Game teste;
-
-		SDL_Delay (5000);
+		teste.Update ();
 
 }

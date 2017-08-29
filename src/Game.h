@@ -19,7 +19,7 @@ public:
 	~Game ();
 
 //Run
-	void Run ();
+	void Update ();
 
 //Get Renderer
 	SDL_Renderer* getRenderer ();
@@ -35,6 +35,14 @@ public:
 private:
 
 	static Game* instance;
+
+	unsigned int CurrentTime, LastTime = 0;
+
+	int fps = 60;
+
+	bool quit = false;
+
+	SDL_Event e;
 
 //	State* state = NULL;
 
